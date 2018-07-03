@@ -1,0 +1,27 @@
+{
+  "name": "express-route-easy",
+  "version": "1.0.0",
+  "description": "Express route easy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/williamvilasboas/express-route-easy.git"
+  },
+  "keywords": [
+    "Express",
+    "route",
+    "easy"
+  ],
+  "author": "William Vilas Boas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/williamvilasboas/express-route-easy/issues"
+  },
+  "homepage": "https://github.com/williamvilasboas/express-route-easy#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
