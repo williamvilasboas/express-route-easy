@@ -23,7 +23,7 @@ module.exports = (accepts, exportsObject, expressRouter = express.Router()) => {
       } else if (typeof dynamicRoute[1] === 'string') {
         var options = {method: dynamicRoute[1]}
       } else {
-        options =  ? dynamicRoute[1] : {method: 'get'}
+        options = {method: 'get'}
       }
       const callback = dynamicRoute[dynamicItemsLength - 1]
 
