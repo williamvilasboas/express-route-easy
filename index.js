@@ -18,7 +18,13 @@ module.exports = (accepts, exportsObject, expressRouter = express.Router()) => {
       const dynamicRoute = exportsObject[dynamicKey]
       const dynamicItemsLength = dynamicRoute.length
       const url = dynamicRoute[0]
-      const options = typeof dynamicRoute[1] === 'object' && !Array.isArray(dynamicRoute[1]) ? dynamicRoute[1] : {method: 'get'}
+      if (typeof dynamicRoute[1] === 'object' && !Array.isArray(dynamicRoute[1])) {
+        var options = dynamicRoute[1]
+      } else if (typeof dynamicRoute[1] === 'string') {
+        var options = {method: dynamicRoute[1]}
+      } else {
+        options =  ? dynamicRoute[1] : {method: 'get'}
+      }
       const callback = dynamicRoute[dynamicItemsLength - 1]
 
       routerGen(url, options.method, callback)
