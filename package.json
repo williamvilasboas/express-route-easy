@@ -1,6 +1,6 @@
 {
   "name": "express-route-easy",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Express route easy",
   "main": "index.js",
   "scripts": {
